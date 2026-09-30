@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-<head>
+<head> <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#8ec5fc">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>教師節快樂!</title>
@@ -86,7 +87,7 @@ min-height: 27px;
 <body>
 
 <div class="card">
-<div class="icon"> </div>
+<div class="icon">🧑‍🏫🍎📚</div>
 <h1>教師節快樂!</h1>
 <p>感謝各位老師辛勤的教導與無私的奉獻,<br>祝您工作順利、桃李
 滿天下!</p>
@@ -111,5 +112,10 @@ wishes[randomIndex];
 }
 </script>
 
+<script>
+if ('serviceWorker' in navigator) {
+navigator.serviceWorker.register('./sw.js');
+}
+</script>
 </body>
 </html>
